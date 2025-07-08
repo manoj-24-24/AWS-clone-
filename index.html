@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AWS Cloud - Static Clone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar glass">
+    <div class="logo">aws<span style="color: #f90;">☁️</span> clone</div>
+    <nav>
+      <a href="#products">Products</a>
+      <a href="#solutions">Solutions</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#docs">Documentation</a>
+      <a href="#support">Support</a>
+      <a href="#create" class="cta-btn">Create Account</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Build Faster, Smarter & Safer with Cloud</h1>
+      <p>AWS offers reliable, scalable, and inexpensive cloud computing services. Get started for free with powerful cloud infrastructure today.</p>
+      <a class="hero-button" href="#create">Get Started with AWS</a>
+    </div>
+  </section>
+
+  <section id="products" class="glass section">
+    <h2>📦 Products</h2>
+    <p>AWS offers 200+ cloud services including computing, storage, database, machine learning, and more. Perfect for startups to enterprises.</p>
+  </section>
+
+  <section id="solutions" class="glass section">
+    <h2>💡 Solutions</h2>
+    <p>From serverless web apps to secure data lakes, AWS powers use cases across AI, IoT, enterprise, mobile, and hybrid cloud architectures.</p>
+  </section>
+
+  <section id="pricing" class="glass section">
+    <h2>💲 Pricing</h2>
+    <p>Pay-as-you-go pricing. Start with the Free Tier and scale as you grow. No upfront fees, no long-term contracts.</p>
+  </section>
+
+  <section id="docs" class="glass section">
+    <h2>📚 Documentation</h2>
+    <p>Get started with step-by-step guides, SDK references, APIs, and architecture examples. AWS makes it easy to learn and deploy fast.</p>
+  </section>
+
+  <section id="support" class="glass section">
+    <h2>🛠️ Support</h2>
+    <p>AWS offers Developer, Business, and Enterprise support plans. Access experts 24/7, technical documentation, and live assistance.</p>
+  </section>
+
+  <section id="create" class="glass section create-account">
+    <h2>🚀 Create an AWS Account</h2>
+    <p>Sign up for a free account to access AWS services. No charges on Free Tier usage.</p>
+    <form id="signupForm">
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="Email Address" required />
+      <input type="password" placeholder="Password" required />
+      <button type="submit">Create Account</button>
+    </form>
+
+    <div id="successMessage" class="success hidden">
+      <h2>✅ Your account has been created</h2>
+      <p>You can now run your cloud server.</p>
+      <p>Thank you for choosing AWS Cloud Server ☁️</p>
+    </div>
+  </section>
+
+  <footer class="glass">
+    <p>&copy; 2025 AWS Cloud Static Clone. Built for educational/demo purposes only.</p>
+  </footer>
+
+  <script>
+    const form = document.getElementById('signupForm');
+    const success = document.getElementById('successMessage');
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      form.style.display = 'none';
+      success.classList.remove('hidden');
+    });
+  </script>
+</body>
+</html>
